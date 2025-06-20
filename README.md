@@ -81,3 +81,17 @@ cela va empêcher la compilation si il y a des erreurs dans le code.
 ### mode strict
 
 ajouter cette option pourrait générer des erreurs dans votre code qui fonctionné déjà, si vous utilisez des fonctionnalités non strictes. ça peut être utile pour les projets de grande envergure, mais cela va augmenter le temps de compilation. pouvez vous en passer si vous débutez.
+
+ajouter dans le fichier tsconfig.json : "strict": true
+
+{
+    "compilerOptions": {
+        "outDir" : "dist",
+        "target" : "es5",
+        "noEmitOnError" : true,
+        "strict" : true
+    },
+    "files": [
+        "src/app.ts"
+    ],
+}
